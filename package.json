@@ -1,0 +1,17 @@
+{
+  "name": "aws-h4b",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc && esbuild src/index.ts --bundle --minify --outdir=./dist/ --banner:js=javascript: --format=iife",
+    "check": "biome check --write --unsafe .",
+    "prepare": "lefthook install"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.8.3",
+    "esbuild": "^0.23.1",
+    "lefthook": "^1.7.15",
+    "typescript": "^5.5.4"
+  }
+}
